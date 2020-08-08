@@ -60,7 +60,7 @@ router.get("/signup", (req, res) => {
   const permissionRequestUrl =
     "https://www.wix.com/app-oauth-installation/consent";
   const appId = APP_ID;
-  const redirectUrl = `https://${req.get("host")}/login`;
+  const redirectUrl = `https://${req.get("host")}/wix/login`;
   const token = req.query.token;
   var url = `${permissionRequestUrl}?token=${token}&appId=${appId}&redirectUrl=${redirectUrl}`;
 
