@@ -119,13 +119,13 @@ router.get("/login", async (req, res) => {
   }
 });
 
-// router.get("/webhooks", async (req, res) => {
-//   res.render("webhooks", {
-//     title: "Wix Application",
-//     app_id: APP_ID,
-//     webhooks: JSON.stringify(incomingWebhooks, null, 2),
-//   });
-// });
+router.get("/webhooks", async (req, res) => {
+  res.render("webhooks", {
+    title: "Wix Application",
+    app_id: APP_ID,
+    webhooks: JSON.stringify(incomingWebhooks, null, 2),
+  });
+});
 
 // this is sample call to Wix instance API - you can find it here: https://dev.wix.com/api/app-management.app-instance.html#get-app-instance
 async function getAppInstance(refreshToken) {
