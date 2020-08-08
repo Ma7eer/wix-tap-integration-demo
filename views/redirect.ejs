@@ -25,10 +25,11 @@
     <div id="root"></div>
     <script>
       goSell.showResult({
-        callback: (response) => {
-          console.log("callback", response);
+        callback: async (response) => {
+          await console.log("callback", response);
         },
       });
+      window.location.href = "https://cryptic-dusk-38095.herokuapp.com/";
     </script>
   </body>
 </html>
