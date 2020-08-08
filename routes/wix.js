@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
 const axios = require("axios");
+const jwt = require("jsonwebtoken");
 
 const config = require("../wix/config");
 const credentials = require("../wix/credentials");
