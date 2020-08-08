@@ -119,7 +119,7 @@ router.get("/login", async (req, res) => {
   }
 });
 
-app.get("/webhooks", async (req, res) => {
+router.get("/webhooks", async (req, res) => {
   res.render("webhooks", {
     title: "Wix Application",
     app_id: APP_ID,
