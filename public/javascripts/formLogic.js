@@ -41,6 +41,7 @@ form.addEventListener("submit", async (e) => {
     };
 
     await console.log(values);
+    await goSell.openLightBox();
     await clearFormValues();
   } catch (error) {
     console.log(error);

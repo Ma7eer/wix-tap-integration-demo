@@ -15,14 +15,21 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <!-- gosell css -->
+    <link
+      href="https://goSellJSLib.b-cdn.net/v1.4.1/css/gosell.css"
+      rel="stylesheet"
+    />
 
     <title><%= title %></title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
+    <div id="root"></div>
+
     <div class="container">
-      <h1><%= title %></h1>
-      <p>Welcome to <%= title %></p>
+      <h1 style="text-align: center;">Wix and Tap Payments Integration</h1>
+      <hr />
 
       <h2>Customer Information</h2>
       <hr />
@@ -169,7 +176,9 @@
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        <button type="submit" class="btn btn-primary btn-block">
+          Submit
+        </button>
       </form>
     </div>
 
@@ -180,6 +189,12 @@
     <script
       type="text/javascript"
       src="https://goSellJSLib.b-cdn.net/v1.4.1/js/gosell.js"
+    ></script>
+    <!-- Tap Payments Integration script -->
+    <script
+      type="text/javascript"
+      src="/javascripts/tapPayments.js"
+      defer
     ></script>
   </body>
 </html>
