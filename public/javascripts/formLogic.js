@@ -61,7 +61,7 @@ function setupTapConfig(customerInfo, itemInfo) {
   goSell.config({
     containerID: "root",
     gateway: {
-      publicKey: "pk_test_KcwngMANEhlXumLbyxBqsGWt",
+      publicKey: "pk_live_KcwngMANEhlXumLbyxBqsGWt",
       language: "en",
       contactInfo: true,
       supportedCurrencies: "all",
@@ -173,7 +173,7 @@ function setupTapConfig(customerInfo, itemInfo) {
           email: false,
           sms: true,
         },
-        redirect: "https://cryptic-dusk-38095.herokuapp.com?success=yup",
+        redirect: "https://cryptic-dusk-38095.herokuapp.com",
         post: null,
       },
     },
