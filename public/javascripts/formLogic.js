@@ -51,7 +51,6 @@ form.addEventListener("submit", async (e) => {
     await setupTapConfig(customerInfo, itemInfo);
 
     await goSell.openLightBox();
-    await clearFormValues();
   } catch (error) {
     console.log(error);
   }
@@ -70,9 +69,11 @@ function setupTapConfig(customerInfo, itemInfo) {
       customerCards: true,
       notifications: "standard",
       callback: (response) => {
+        clearFormValues();
         console.log("response", response);
       },
       onClose: () => {
+        clearFormValues();
         console.log("onClose Event");
       },
       backgroundImg: {
